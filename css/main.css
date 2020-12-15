@@ -33,7 +33,8 @@ img {
 #commercial2-bg,
 #commercial3-bg,
 #commercial4-bg,
-#commercial5-bg{
+#commercial5-bg,
+#commercial6-bg{
     background: #000;
     height: 956px;
     width: 1700px;
@@ -62,6 +63,10 @@ img {
 #commercial5-bg{
     -webkit-animation: comAnim-5 20s infinite ease-in-out;
     animation: comAnim-5 20s infinite ease-in-out;
+}
+#commercial6-bg{
+    -webkit-animation: comAnim-6 11s infinite ease-in-out;
+    animation: comAnim-6 11s infinite ease-in-out;
 }
 #sports-bg{
     -webkit-animation: sportsAnim 32s infinite ease-in-out;
@@ -139,7 +144,42 @@ img {
     -webkit-animation: bgAnim12 11s infinite ease-in-out;
     animation: bgAnim12 11s infinite ease-in-out;
 }
-
+@keyframes comAnim-6 {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/commercial/coffee1-1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    40% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/commercial/coffee1-2.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    } 60% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/commercial/coffee1-3.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }  100% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/commercial/coffee1-1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    } 
+}
 @keyframes comAnim-5 {
     0% {
         opacity: 1;
