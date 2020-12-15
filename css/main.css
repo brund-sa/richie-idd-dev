@@ -21,6 +21,9 @@ img {
 #section7-bg,
 #section8-bg,
 #section9-bg,
+#section10-bg,
+#section11-bg,
+#section12-bg,
 #health-bg,
 #hospi-bg,
 #hospi2-bg,
@@ -120,6 +123,21 @@ img {
 #section9-bg {
     -webkit-animation: bgAnim9 20s infinite ease-in-out;
     animation: bgAnim9 20s infinite ease-in-out;
+}
+
+#section10-bg {
+    -webkit-animation: bgAnim10 11s infinite ease-in-out;
+    animation: bgAnim10 11s infinite ease-in-out;
+}
+
+#section11-bg{
+    -webkit-animation: bgAnim11 25s infinite ease-in-out;
+    animation: bgAnim11 25s infinite ease-in-out;
+}
+
+#section12-bg{
+    -webkit-animation: bgAnim12 11s infinite ease-in-out;
+    animation: bgAnim12 11s infinite ease-in-out;
 }
 
 @keyframes comAnim-5 {
@@ -1402,6 +1420,126 @@ img {
         background-position: center center;
     }
   }
+
+@keyframes bgAnim10 {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/residential/arabic-1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    40% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/residential/arabic-2.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    } 60% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/residential/arabic-3.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }  100% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/residential/arabic-1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    } 
+}
+
+@keyframes bgAnim11 {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/residential/bedroom1-1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    25% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/residential/bedroom1-2.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    } 50% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/residential/bedroom1-3.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }  75% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/residential/bedroom1-4.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    } 100% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/residential/bedroom1-1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    } 
+}
+
+@keyframes bgAnim12 {
+    0% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/residential/bedroom2-1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    40% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/residential/bedroom2-2.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    } 60% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/residential/bedroom2-3.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }  100% {
+        opacity: 1;
+        visibility: visible;
+        background-color: #000000;
+        background: url("../img/assets/residential/bedroom2-1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    } 
+}
+
 
 #bg- {
     width: 100%;
