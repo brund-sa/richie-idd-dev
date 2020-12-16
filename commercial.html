@@ -1284,49 +1284,49 @@
     <link rel="icon" type="image/x-icon" href="img/general/richieIDD.png">
     <script language=JavaScript>
 
-        var message="Please do not download the images.";
-        
-        function clickIE6(){
-        
-        if (event.button==2){
-        
-        
-        return false;
-        
+        var message = "Please do not download the images.";
+
+        function clickIE6() {
+
+            if (event.button == 2) {
+
+
+                return false;
+
+            }
+
         }
-        
+
+        function clickNS4(e) {
+
+            if (document.layers || document.getElementById && !document.all) {
+
+                if (e.which == 2 || e.which == 3) {
+
+                    return false;
+
+                }
+
+            }
+
         }
-        
-        function clickNS4(e){
-        
-        if (document.layers||document.getElementById&&!document.all){
-        
-        if (e.which==2||e.which==3){
-        
-        return false;
-        
+
+        if (document.layers) {
+
+            document.captureEvents(Event.MOUSEDOWN);
+
+            document.onmousedown = clickNS4;
+
         }
-        
+
+        else if (document.all && !document.getElementById) {
+
+            document.onmousedown = clickIE6;
+
         }
-        
-        }
-        
-        if (document.layers){
-        
-        document.captureEvents(Event.MOUSEDOWN);
-        
-        document.onmousedown=clickNS4;
-        
-        }
-        
-        else if (document.all&&!document.getElementById){
-        
-        document.onmousedown=clickIE6;
-        
-        }
-        
-        document.oncontextmenu=new Function("return false")
-        
+
+        document.oncontextmenu = new Function("return false")
+
     </script>
 </head>
 
@@ -1656,286 +1656,338 @@
             </div>
         </header>
         <!-- HEADER END -->
-    <div class="page-wrapper bg-dark color-white" data-barba="container">
-      <main class="page-wrapper__content">
-        <!-- section MASTHEAD -->
-        <section
-          class="section section-masthead section-masthead_big-heading section-fullheight text-center bg-dark-2 color-white"
-          data-os-animation="data-os-animation">
-          <div class="section-fullheight__inner">
-            <h1
-              class="js-text-to-fly split-text js-split-text section-masthead__heading section-masthead__heading-big text-xxl"
-              data-split-text-type="lines, words, chars" data-split-text-set="chars">Commercial</h1>
-          </div>
-        </section>
-        <!-- - section MASTHEAD -->
-        <!-- section PORTFOLIO -->
-        <section class="section section-portfolio section_pt-large section_pb overflow bg-dark-2 color-white"
-          data-os-animation="data-os-animation">
-          <div class="container-fluid">
-            <div class="grid grid_fluid-6 js-grid" data-grid-columns="3" data-grid-columns-tablet="2"
-              data-grid-columns-mobile="1">
-              <div
-                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy grid__sizer js-grid__sizer">
-              </div>
-              <div
-                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy js-grid__item">
-                <a class="figure-portfolio figure-portfolio-big text-right" href="commercial-1.html"
-                  data-pjax-link="flyingHeading" data-os-animation="data-os-animation">
-                  <div class="figure-portfolio-big__wrapper-letter">
-                    <div class="figure-portfolio-big__letter" data-art-parallax="element" data-art-parallax-y="-75%">T
+        <div class="page-wrapper bg-dark color-white" data-barba="container">
+            <main class="page-wrapper__content">
+                <!-- section MASTHEAD -->
+                <section
+                    class="section section-masthead section-masthead_big-heading section-fullheight text-center bg-dark-2 color-white"
+                    data-os-animation="data-os-animation">
+                    <div class="section-fullheight__inner">
+                        <h1 class="js-text-to-fly split-text js-split-text section-masthead__heading section-masthead__heading-big text-xxl"
+                            data-split-text-type="lines, words, chars" data-split-text-set="chars">Commercial</h1>
                     </div>
-                  </div>
-                  <div class="figure-portfolio-big__wrapper-img">
-                    <div class="figure-portfolio-big__wrapper-img-inner">
-                      <div class="lazy"><img data-src="img/assets/commercial/com1-5.webp" src="#" alt width="1200"
-                          height="1800"></div>
-                    </div>
-                  </div>
-                  <div class="figure-portfolio-big__content">
-                    <h4 class="figure-portfolio-big__heading split-text js-text-to-fly js-split-text"
-                      data-split-text-type="lines, words, chars" data-split-text-set="chars">AL SHATRI</h4>
-                    <div class="figure-portfolio-big__category split-text js-split-text"
-                      data-split-text-type="lines, words, chars" data-split-text-set="chars">Architecture</div>
-                  </div>
-                </a>
-              </div>
-              <div
-                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy js-grid__item">
-                <a class="figure-portfolio figure-portfolio-big text-right" href="commercial-2.html"
-                  data-pjax-link="flyingHeading" data-os-animation="data-os-animation">
-                  <div class="figure-portfolio-big__wrapper-letter">
-                    <div class="figure-portfolio-big__letter" data-art-parallax="element" data-art-parallax-y="-75%">C
-                    </div>
-                  </div>
-                  <div class="figure-portfolio-big__wrapper-img">
-                    <div class="figure-portfolio-big__wrapper-img-inner">
-                      <div class="lazy"><img data-src="img/assets/commercial/thumb-1.webp" src="#" alt width="1200"
-                          height="1800"></div>
-                    </div>
-                  </div>
-                  <div class="figure-portfolio-big__content">
-                    <h4 class="figure-portfolio-big__heading split-text js-text-to-fly js-split-text"
-                      data-split-text-type="lines, words, chars" data-split-text-set="chars">CAFÉ</h4>
-                    <div class="figure-portfolio-big__category split-text js-split-text"
-                      data-split-text-type="lines, words, chars" data-split-text-set="chars">Interior Design</div>
-                  </div>
-                </a>
-              </div>
+                </section>
+                <!-- - section MASTHEAD -->
+                <!-- section PORTFOLIO -->
+                <section class="section section-portfolio section_pt-large section_pb overflow bg-dark-2 color-white"
+                    data-os-animation="data-os-animation">
+                    <div class="container-fluid">
+                        <div class="grid grid_fluid-6 js-grid" data-grid-columns="3" data-grid-columns-tablet="2"
+                            data-grid-columns-mobile="1">
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy grid__sizer js-grid__sizer">
+                            </div>
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy js-grid__item">
+                                <a class="figure-portfolio figure-portfolio-big text-right" href="commercial-1.html"
+                                    data-pjax-link="flyingHeading" data-os-animation="data-os-animation">
+                                    <div class="figure-portfolio-big__wrapper-letter">
+                                        <div class="figure-portfolio-big__letter" data-art-parallax="element"
+                                            data-art-parallax-y="-75%">T
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio-big__wrapper-img">
+                                        <div class="figure-portfolio-big__wrapper-img-inner">
+                                            <div class="lazy"><img data-src="img/assets/commercial/com1-5.webp" src="#"
+                                                    alt width="1200" height="1800"></div>
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio-big__content">
+                                        <h4 class="figure-portfolio-big__heading split-text js-text-to-fly js-split-text"
+                                            data-split-text-type="lines, words, chars" data-split-text-set="chars">AL
+                                            SHATRI</h4>
+                                        <div class="figure-portfolio-big__category split-text js-split-text"
+                                            data-split-text-type="lines, words, chars" data-split-text-set="chars">
+                                            Architecture</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy js-grid__item">
+                                <a class="figure-portfolio figure-portfolio-big text-right" href="commercial-2.html"
+                                    data-pjax-link="flyingHeading" data-os-animation="data-os-animation">
+                                    <div class="figure-portfolio-big__wrapper-letter">
+                                        <div class="figure-portfolio-big__letter" data-art-parallax="element"
+                                            data-art-parallax-y="-75%">C
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio-big__wrapper-img">
+                                        <div class="figure-portfolio-big__wrapper-img-inner">
+                                            <div class="lazy"><img data-src="img/assets/commercial/thumb-1.webp" src="#"
+                                                    alt width="1200" height="1800"></div>
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio-big__content">
+                                        <h4 class="figure-portfolio-big__heading split-text js-text-to-fly js-split-text"
+                                            data-split-text-type="lines, words, chars" data-split-text-set="chars">CAFÉ
+                                        </h4>
+                                        <div class="figure-portfolio-big__category split-text js-split-text"
+                                            data-split-text-type="lines, words, chars" data-split-text-set="chars">
+                                            Interior Design</div>
+                                    </div>
+                                </a>
+                            </div>
 
-              <div
-                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy js-grid__item">
-                <a class="figure-portfolio figure-portfolio-big text-right" href="commercial-3.html"
-                  data-pjax-link="flyingHeading" data-os-animation="data-os-animation">
-                  <div class="figure-portfolio-big__wrapper-letter">
-                    <div class="figure-portfolio-big__letter" data-art-parallax="element" data-art-parallax-y="-75%">B
-                    </div>
-                  </div>
-                  <div class="figure-portfolio-big__wrapper-img">
-                    <div class="figure-portfolio-big__wrapper-img-inner">
-                      <div class="lazy"><img data-src="img/assets/commercial/bounce-thumb.webp" src="#" alt width="1200"
-                          height="1800"></div>
-                    </div>
-                  </div>
-                  <div class="figure-portfolio-big__content">
-                    <h4 class="figure-portfolio-big__heading split-text js-text-to-fly js-split-text"
-                      data-split-text-type="lines, words, chars" data-split-text-set="chars">BOUNCE</h4>
-                    <div class="figure-portfolio-big__category split-text js-split-text"
-                      data-split-text-type="lines, words, chars" data-split-text-set="chars">ARCHITECTURE</div> 
-                  </div>
-                </a>
-              </div>
-              
-              <div
-                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy js-grid__item">
-                <a class="figure-portfolio figure-portfolio-big text-right" href="commercial-4.html"
-                  data-pjax-link="flyingHeading" data-os-animation="data-os-animation">
-                  <div class="figure-portfolio-big__wrapper-letter">
-                    <div class="figure-portfolio-big__letter" data-art-parallax="element" data-art-parallax-y="-75%">B
-                    </div>
-                  </div>
-                  <div class="figure-portfolio-big__wrapper-img">
-                    <div class="figure-portfolio-big__wrapper-img-inner">
-                      <div class="lazy"><img data-src="img/assets/commercial/burger-thumb.webp" src="#" alt width="1200"
-                          height="1800"></div>
-                    </div>
-                  </div>
-                  <div class="figure-portfolio-big__content">
-                    <h4 class="figure-portfolio-big__heading split-text js-text-to-fly js-split-text"
-                      data-split-text-type="lines, words, chars" data-split-text-set="chars">BURGERS</h4>
-                    <div class="figure-portfolio-big__category split-text js-split-text"
-                      data-split-text-type="lines, words, chars" data-split-text-set="chars">INTERIOR DESIGN</div> 
-                  </div>
-                </a>
-              </div>
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy js-grid__item">
+                                <a class="figure-portfolio figure-portfolio-big text-right" href="commercial-3.html"
+                                    data-pjax-link="flyingHeading" data-os-animation="data-os-animation">
+                                    <div class="figure-portfolio-big__wrapper-letter">
+                                        <div class="figure-portfolio-big__letter" data-art-parallax="element"
+                                            data-art-parallax-y="-75%">B
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio-big__wrapper-img">
+                                        <div class="figure-portfolio-big__wrapper-img-inner">
+                                            <div class="lazy"><img data-src="img/assets/commercial/bounce-thumb.webp"
+                                                    src="#" alt width="1200" height="1800"></div>
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio-big__content">
+                                        <h4 class="figure-portfolio-big__heading split-text js-text-to-fly js-split-text"
+                                            data-split-text-type="lines, words, chars" data-split-text-set="chars">
+                                            BOUNCE</h4>
+                                        <div class="figure-portfolio-big__category split-text js-split-text"
+                                            data-split-text-type="lines, words, chars" data-split-text-set="chars">
+                                            ARCHITECTURE</div>
+                                    </div>
+                                </a>
+                            </div>
 
-              <div
-                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy js-grid__item">
-                <a class="figure-portfolio figure-portfolio-big text-right" href="commercial-5.html"
-                  data-pjax-link="flyingHeading" data-os-animation="data-os-animation">
-                  <div class="figure-portfolio-big__wrapper-letter">
-                    <div class="figure-portfolio-big__letter" data-art-parallax="element" data-art-parallax-y="-75%">J
-                    </div>
-                  </div>
-                  <div class="figure-portfolio-big__wrapper-img">
-                    <div class="figure-portfolio-big__wrapper-img-inner">
-                      <div class="lazy"><img data-src="img/assets/commercial/jacuzzi-thumb.webp" src="#" alt width="1200"
-                          height="1800"></div>
-                    </div>
-                  </div>
-                  <div class="figure-portfolio-big__content">
-                    <h4 class="figure-portfolio-big__heading split-text js-text-to-fly js-split-text"
-                      data-split-text-type="lines, words, chars" data-split-text-set="chars">JACUZZI</h4>
-                    <div class="figure-portfolio-big__category split-text js-split-text"
-                      data-split-text-type="lines, words, chars" data-split-text-set="chars">ARCHITECTURE</div> 
-                  </div>
-                </a>
-              </div>
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy js-grid__item">
+                                <a class="figure-portfolio figure-portfolio-big text-right" href="commercial-4.html"
+                                    data-pjax-link="flyingHeading" data-os-animation="data-os-animation">
+                                    <div class="figure-portfolio-big__wrapper-letter">
+                                        <div class="figure-portfolio-big__letter" data-art-parallax="element"
+                                            data-art-parallax-y="-75%">B
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio-big__wrapper-img">
+                                        <div class="figure-portfolio-big__wrapper-img-inner">
+                                            <div class="lazy"><img data-src="img/assets/commercial/burger-thumb.webp"
+                                                    src="#" alt width="1200" height="1800"></div>
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio-big__content">
+                                        <h4 class="figure-portfolio-big__heading split-text js-text-to-fly js-split-text"
+                                            data-split-text-type="lines, words, chars" data-split-text-set="chars">
+                                            BURGERS</h4>
+                                        <div class="figure-portfolio-big__category split-text js-split-text"
+                                            data-split-text-type="lines, words, chars" data-split-text-set="chars">
+                                            INTERIOR DESIGN</div>
+                                    </div>
+                                </a>
+                            </div>
 
-              <div
-                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy js-grid__item">
-                <a class="figure-portfolio figure-portfolio-big text-right" href="commercial-6.html"
-                  data-pjax-link="flyingHeading" data-os-animation="data-os-animation">
-                  <div class="figure-portfolio-big__wrapper-letter">
-                    <div class="figure-portfolio-big__letter" data-art-parallax="element" data-art-parallax-y="-75%">C
-                    </div>
-                  </div>
-                  <div class="figure-portfolio-big__wrapper-img">
-                    <div class="figure-portfolio-big__wrapper-img-inner">
-                      <div class="lazy"><img data-src="img/assets/commercial/coffee1-thumb.webp" src="#" alt width="1200"
-                          height="1800"></div>
-                    </div>
-                  </div>
-                  <div class="figure-portfolio-big__content">
-                    <h4 class="figure-portfolio-big__heading split-text js-text-to-fly js-split-text"
-                      data-split-text-type="lines, words, chars" data-split-text-set="chars">COFFEE INTERIOR 1</h4>
-                    <div class="figure-portfolio-big__category split-text js-split-text"
-                      data-split-text-type="lines, words, chars" data-split-text-set="chars">INTERIOR DESIGN</div> 
-                  </div>
-                </a>
-              </div>
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy js-grid__item">
+                                <a class="figure-portfolio figure-portfolio-big text-right" href="commercial-5.html"
+                                    data-pjax-link="flyingHeading" data-os-animation="data-os-animation">
+                                    <div class="figure-portfolio-big__wrapper-letter">
+                                        <div class="figure-portfolio-big__letter" data-art-parallax="element"
+                                            data-art-parallax-y="-75%">J
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio-big__wrapper-img">
+                                        <div class="figure-portfolio-big__wrapper-img-inner">
+                                            <div class="lazy"><img data-src="img/assets/commercial/jacuzzi-thumb.webp"
+                                                    src="#" alt width="1200" height="1800"></div>
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio-big__content">
+                                        <h4 class="figure-portfolio-big__heading split-text js-text-to-fly js-split-text"
+                                            data-split-text-type="lines, words, chars" data-split-text-set="chars">
+                                            JACUZZI</h4>
+                                        <div class="figure-portfolio-big__category split-text js-split-text"
+                                            data-split-text-type="lines, words, chars" data-split-text-set="chars">
+                                            ARCHITECTURE</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy js-grid__item">
+                                <a class="figure-portfolio figure-portfolio-big text-right" href="commercial-6.html"
+                                    data-pjax-link="flyingHeading" data-os-animation="data-os-animation">
+                                    <div class="figure-portfolio-big__wrapper-letter">
+                                        <div class="figure-portfolio-big__letter" data-art-parallax="element"
+                                            data-art-parallax-y="-75%">C
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio-big__wrapper-img">
+                                        <div class="figure-portfolio-big__wrapper-img-inner">
+                                            <div class="lazy"><img data-src="img/assets/commercial/coffee1-thumb.webp"
+                                                    src="#" alt width="1200" height="1800"></div>
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio-big__content">
+                                        <h4 class="figure-portfolio-big__heading split-text js-text-to-fly js-split-text"
+                                            data-split-text-type="lines, words, chars" data-split-text-set="chars">
+                                            COFFEE INTERIOR 1</h4>
+                                        <div class="figure-portfolio-big__category split-text js-split-text"
+                                            data-split-text-type="lines, words, chars" data-split-text-set="chars">
+                                            INTERIOR DESIGN</div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div
+                                class="grid__item grid__item_desktop-4 grid__item_tablet-6 grid__item_mobile-12 grid__item_fluid-6 grid__item_fluid-6-fancy js-grid__item">
+                                <a class="figure-portfolio figure-portfolio-big text-right" href="commercial-7.html"
+                                    data-pjax-link="flyingHeading" data-os-animation="data-os-animation">
+                                    <div class="figure-portfolio-big__wrapper-letter">
+                                        <div class="figure-portfolio-big__letter" data-art-parallax="element"
+                                            data-art-parallax-y="-75%">C
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio-big__wrapper-img">
+                                        <div class="figure-portfolio-big__wrapper-img-inner">
+                                            <div class="lazy"><img data-src="img/assets/commercial/coffee2-thumb.webp"
+                                                    src="#" alt width="1200" height="1800"></div>
+                                        </div>
+                                    </div>
+                                    <div class="figure-portfolio-big__content">
+                                        <h4 class="figure-portfolio-big__heading split-text js-text-to-fly js-split-text"
+                                            data-split-text-type="lines, words, chars" data-split-text-set="chars">
+                                            COFFEE INTERIOR 2</h4>
+                                        <div class="figure-portfolio-big__category split-text js-split-text"
+                                            data-split-text-type="lines, words, chars" data-split-text-set="chars">
+                                            INTERIOR DESIGN</div>
+                                    </div>
+                                </a>
+                            </div>
 
 
-            </div>
-          </div>
-        </section>
-        <!-- - section PORTFOLIO -->
-        <!-- section CALL TO ACTION -->
-        <section
-          class="section section-content section-cta section-image section_pt section_pb section_z-100 bg-dark-2 color-white text-center">
-          <div class="section-cta__line"></div>
-          <div class="section__content">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8">
-                  <header class="section-cta__header">
-                    <h2 class="section-cta__heading">Have a Project in Mind?</h2>
-                    <p>Let's turn your concept into reality!</p>
-                  </header>
-                  <div class="section-cta__wrapper-button section-content__wrapper-button"><a
-                      class="button button_icon button_accent" href="contact.html">
-                      <div class="button__label">Let's Talk!</div>
-                      <div class="button__icon"><i class="material-icons">keyboard_arrow_right</i></div>
-                    </a></div>
+                        </div>
+                    </div>
+                </section>
+                <!-- - section PORTFOLIO -->
+                <!-- section CALL TO ACTION -->
+                <section
+                    class="section section-content section-cta section-image section_pt section_pb section_z-100 bg-dark-2 color-white text-center">
+                    <div class="section-cta__line"></div>
+                    <div class="section__content">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <header class="section-cta__header">
+                                        <h2 class="section-cta__heading">Have a Project in Mind?</h2>
+                                        <p>Let's turn your concept into reality!</p>
+                                    </header>
+                                    <div class="section-cta__wrapper-button section-content__wrapper-button"><a
+                                            class="button button_icon button_accent" href="contact.html">
+                                            <div class="button__label">Let's Talk!</div>
+                                            <div class="button__icon"><i class="material-icons">keyboard_arrow_right</i>
+                                            </div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-image__wrapper section-image__wrapper_absolute" data-art-parallax="background"
+                        data-art-parallax-factor="0.1">
+                        <div class="art-parallax__bg lazy-bg" data-src="img/assets/sectionCTA/bg-2.webp"></div>
+                        <div class="section-image__overlay overlay overlay_dark"></div>
+                    </div>
+                </section>
+                <!-- - section CALL TO ACTION -->
+            </main>
+            <footer class="footer container-fluid bg-ornament color-white">
+                <div class="footer__area-primary">
+                    <div class="footer__row row">
+                        <div class="col-lg-4 text-left footer__column">
+                            <section class="widget widget_cassio_logo"><a class="logo" href="index.html">
+                                    <div class="logo__text"><span class="logo__text-title"><img
+                                                src="img/general/richiIdd_logo.svg" style="width: 50%;" /></span></div>
+                                </a>
+                                <p>We pride ourselves on understanding the
+                                    details of how it is built that can only come
+                                    from having the skills to understand the
+                                    architectural and engineering of the
+                                    establishment and how this relates to the long
+                                    term goals of the asset.</p>
+                            </section>
+                        </div>
+                        <div class="col-lg-4 text-center footer__column">
+                            <section class="widget widget_cassio_social">
+                                <ul class="social">
+                                    <li class="social__item"><a class="fa fa-facebook-f"
+                                            href="https://www.facebook.com/RichieIDD/" style="font-size: 31px;"></a>
+                                    </li>
+                                    <li class="social__item"><a class="fa fa-instagram"
+                                            href="https://www.instagram.com/richieidd/" style="font-size: 31px;"></a>
+                                    </li>
+                                    <li class="social__item"><a class="fa fa-twitter"
+                                            href="https://twitter.com/richieidd" style="font-size: 31px;"></a></li>
+                                    <li class="social__item"><a class="fa fa-snapchat"
+                                            href="https://www.snapchat.com/add/richieidd" style="font-size: 31px;"></a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col-lg-4 text-right footer__column">
+                            <section class="widget widget_text">
+                                <div class="textwidget">
+                                    <p>
+                                        <a href="tel:+966 545 488 488">+966 545 488 488</a><br>
+                                        <a href="mailto:info@richieidd.com"><span
+                                                class="__cf_email__">info@richieidd.com</span></a><br>
+                                        <a href="https://bit.ly/3gibprD" target="_blank">7447 Al Ilham, Al Hamra
+                                            Dist, Jeddah 23324</a>
+                                    </p>
+                                    <p style="font-weight: 700;">BRANCHES</p>
+                                    <p><span style="color: var(--color-accent-primary-1);">RIYADH</span> | <span
+                                            style="color: var(--color-accent-primary-1);">JEDDAH</span> | <span
+                                            style="color: var(--color-accent-primary-1);">JAZAN</span> | <span
+                                            style="color: var(--color-accent-primary-1);">DUBAI</span> | <span
+                                            style="color: var(--color-accent-primary-1);">CAIRO</span></p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="section-image__wrapper section-image__wrapper_absolute" data-art-parallax="background"
-            data-art-parallax-factor="0.1">
-            <div class="art-parallax__bg lazy-bg" data-src="img/assets/sectionCTA/bg-2.webp"></div>
-            <div class="section-image__overlay overlay overlay_dark"></div>
-          </div>
-        </section>
-        <!-- - section CALL TO ACTION -->
-      </main>
-      <footer class="footer container-fluid bg-ornament color-white">
-        <div class="footer__area-primary">
-          <div class="footer__row row">
-            <div class="col-lg-4 text-left footer__column">
-              <section class="widget widget_cassio_logo"><a class="logo" href="index.html">
-                  <div class="logo__text"><span class="logo__text-title"><img src="img/general/richiIdd_logo.svg"
-                        style="width: 50%;" /></span></div>
-                </a>
-                <p>We pride ourselves on understanding the
-                  details of how it is built that can only come
-                  from having the skills to understand the
-                  architectural and engineering of the
-                  establishment and how this relates to the long
-                  term goals of the asset.</p>
-              </section>
-            </div>
-            <div class="col-lg-4 text-center footer__column">
-              <section class="widget widget_cassio_social">
-                <ul class="social">
-                  <li class="social__item"><a class="fa fa-facebook-f" href="https://www.facebook.com/RichieIDD/"
-                      style="font-size: 31px;"></a></li>
-                  <li class="social__item"><a class="fa fa-instagram" href="https://www.instagram.com/richieidd/"
-                      style="font-size: 31px;"></a></li>
-                  <li class="social__item"><a class="fa fa-twitter" href="https://twitter.com/richieidd"
-                      style="font-size: 31px;"></a></li>
-                  <li class="social__item"><a class="fa fa-snapchat" href="https://www.snapchat.com/add/richieidd"
-                      style="font-size: 31px;"></a></li>
-                </ul>
-              </section>
-            </div>
-            <div class="col-lg-4 text-right footer__column">
-              <section class="widget widget_text">
-                <div class="textwidget">
-                    <p>
-                        <a href="tel:+966 545 488 488">+966 545 488 488</a><br>
-                        <a href="mailto:info@richieidd.com"><span
-                                class="__cf_email__">info@richieidd.com</span></a><br>
-                        <a href="https://bit.ly/3gibprD" target="_blank">7447 Al Ilham, Al Hamra
-                            Dist, Jeddah 23324</a>
-                    </p>
-                    <p style="font-weight: 700;">BRANCHES</p>
-                    <p><span style="color: var(--color-accent-primary-1);">RIYADH</span> | <span style="color: var(--color-accent-primary-1);">JEDDAH</span> | <span style="color: var(--color-accent-primary-1);">JAZAN</span> | <span style="color: var(--color-accent-primary-1);">DUBAI</span> | <span style="color: var(--color-accent-primary-1);">CAIRO</span></p>
+                <div class="footer__area-secondary">
+                    <div class="footer__row row justify-content-between align-items-center">
+                        <div class="col-lg-6 order-lg-2 footer__column text-right">
+                            <section class="widget widget_cassio_menu_inline">
+                                <ul class="menu">
+                                    <li><a href="#">Terms of Usage</a>
+                                    </li>
+                                    <li><a href="#">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col-lg-6 order-lg-1 footer__column text-left">
+                            <section class="widget widget_cassio_copyright"><small class="copyright">© 2020 Richie IDD.
+                                    All Rights
+                                    Reserved</a></small></section>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            </div>
-          </div>
+            </footer>
         </div>
-        <div class="footer__area-secondary">
-          <div class="footer__row row justify-content-between align-items-center">
-            <div class="col-lg-6 order-lg-2 footer__column text-right">
-              <section class="widget widget_cassio_menu_inline">
-                <ul class="menu">
-                  <li><a href="#">Terms of Usage</a>
-                  </li>
-                  <li><a href="#">Privacy Policy</a>
-                  </li>
-                </ul>
-              </section>
-            </div>
-            <div class="col-lg-6 order-lg-1 footer__column text-left">
-              <section class="widget widget_cassio_copyright"><small class="copyright">© 2020 Richie IDD. All Rights
-                  Reserved</a></small></section>
-            </div>
-          </div>
-        </div>
-      </footer>
+        <div class="transition-curtain bg-white"></div>
+        <canvas id="js-webgl"></canvas>
     </div>
-    <div class="transition-curtain bg-white"></div>
-    <canvas id="js-webgl"></canvas>
-  </div>
 
-  <!-- AOS ANIMATION -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- INITIALIZE AOS-->
-  <script>
-    AOS.init();
-    window.addEventListener('load', AOS.refresh);
-  </script>
+    <!-- AOS ANIMATION -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- INITIALIZE AOS-->
+    <script>
+        AOS.init();
+        window.addEventListener('load', AOS.refresh);
+    </script>
 
 
-  <!-- VENDOR SCRIPTS -->
-  <script src="js/vendor.js"></script>
-  <!-- - VENDOR SCRIPTS -->
-  <!-- COMPONENTS -->
-  <script src="js/components.js"></script>
-  <!-- - COMPONENTS -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALbWA4xez3CztK8Q-fZkvxAie-rpMm3jY"></script>
+    <!-- VENDOR SCRIPTS -->
+    <script src="js/vendor.js"></script>
+    <!-- - VENDOR SCRIPTS -->
+    <!-- COMPONENTS -->
+    <script src="js/components.js"></script>
+    <!-- - COMPONENTS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALbWA4xez3CztK8Q-fZkvxAie-rpMm3jY"></script>
 </body>
 
 </html>

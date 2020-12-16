@@ -6,9 +6,23 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Richie IDD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta content="telephone=no" name="format-detection">
-    <meta name="HandheldFriendly" content="true">
-    <style>
+    <link rel="icon" href="img/general/richieIDD.png">
+    <meta name="keywords" content="architectural-design, Architecture, architecture, Interior, Interior design, design, architects, studio, Interior designer in jeddah, interior designer in jeddah saudi arabia, interior designer in middle east, best interior designer in middle east, best interior designer in saudi arabia, best architecture firm in middle east, best architectural firm in jeddah, architectural firm in saudi arabia ">
+    <meta name="author" content="Brund.Run">
+    <meta name="description" content="RICHIE IDD is an Architectural, Interior design studio based in Jeddah, Saudi Arabia, We are a highly qualified and dynamic team of Interior Designers, Architects, Technicians and Project Managers specializing in multiple...">
+    <meta name="theme-color" content="#181818">
+    <meta name="twitter:card" content="RICHIE IDD is an Architectural, Interior design studio based in Jeddah, Saudi Arabia, We are a highly qualified and dynamic team of Interior Designers, Architects, Technicians and Project Managers specializing in multiple...">
+    <meta name="twitter:site" content="@RichieIDD">
+    <meta name="twitter:creator" content="@RichieIDD">
+    <meta name="twitter:url" content="https://twitter.com/RichieIDD">
+    <meta name="twitter:title" content="RICHIE IDD is a luxury design studio based in
+    Jeddah, Saudi Arabia that offers Interior
+    Design, Interior Architecture and Project
+    Management services. ">
+    <meta name="twitter:description" content="RICHIE IDD is an Architectural, Interior design studio based in Jeddah, Saudi Arabia, We are a highly qualified and dynamic team of Interior Designers, Architects, Technicians and Project Managers specializing in multiple...">
+    <meta name="twitter:image" content="img/assets/card.jpg">
+    <meta name="twitter:image:alt" content="RICHIE IDD is an Architectural, Interior design studio based in Jeddah, Saudi Arabia, We are a highly qualified and dynamic team of Interior Designers, Architects, Technicians and Project Managers specializing in multiple...">
+      <style>
         :root {
             --font-primary: 'Avenir', sans-serif;
             --font-secondary: 'Playfair Display', serif;
@@ -1379,6 +1393,8 @@
                             <li><a href="contact.html">CONTACTS</a></li>
                         </ul>
                     </div>
+                    
+
                     <div class="col-auto text-center d-lg-none">
                         <div class="header__burger" id="js-burger">
                             <div class="header__burger-line"></div>
@@ -1403,6 +1419,25 @@
                                 <a class="fa fa-whatsapp" href="https://wa.me/966545488488"></a>
                             </li>
                         </ul>
+                        
+                        <!-- music Player -->
+                        <div class="player__container">
+                            <div id="app">
+                                <div class="pause">
+                                    <div class="line line_1"></div>
+                                    <div class="line line_2"></div>
+                                </div>
+                                <div class="play active">
+                                    <div class="line line_1"></div>
+                                    <div class="line line_2"></div>
+                                    <div class="line line_3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <audio id="music">
+                        <source src="http://www.mp3classicalmusic.net/48Music/Beethoven48/Sonata%20op26-1.mp3" type="audio/mpeg">
+
+                        <!-- end music Player -->
                     </div>
                 </div>
                 <div class="header__overlay-menu-back material-icons" id="js-submenu-back">arrow_back</div>
@@ -1898,7 +1933,11 @@
                 </div>
             </footer>
         </div>
-        <div class="transition-curtain bg-white"></div>
+
+
+       
+
+        <div class="transition-curtain bg-dark"></div>
         <canvas id="js-webgl"></canvas>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -1908,6 +1947,28 @@
     <script src="js/vendor.js"></script>
     <script src="js/components.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALbWA4xez3CztK8Q-fZkvxAie-rpMm3jY"></script>
+    <script>
+        /* music player */
+        var pause = document.querySelector('.pause');
+        var play = document.querySelector('.play');
+        var btn = document.querySelector('#app');
+        var myMusic= document.getElementById("music");
+
+        btn.addEventListener('click', () => {
+            if( play.classList.contains("active") )
+            {
+                play.classList.remove("active");
+                pause.classList.add("active");
+                    myMusic.play();
+            }
+            else
+            {
+                pause.classList.remove("active");
+                play.classList.add("active");
+                myMusic.pause();
+            }
+        })
+    </script>
 </body>
 
 </html>
