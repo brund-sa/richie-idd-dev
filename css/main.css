@@ -105,6 +105,39 @@
     transform: rotate(55deg) translateY(13.5px) translateX(0px);
   }
 
+#play-music:before {
+    content: 'PLAY MUSIC';
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    line-height: 15px;
+    /* left: 32px; */
+    margin-left: -15px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#play-music:hover:before {
+    opacity: 1;
+}
+
+#pause-music:before {
+    content: 'PAUSE MUSIC';
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    line-height: 15px;
+    /* left: 32px; */
+    margin-left: -15px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#pause-music:hover:before {
+    opacity: 1;
+}
 
   /*===================================================================== </ music Player > ========================================================================== */
 img {

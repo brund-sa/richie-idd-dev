@@ -1296,52 +1296,6 @@
     <meta name="msapplication-TileImage" content="img/general/richieIDD.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" type="image/x-icon" href="img/general/richieIDD.png">
-    <script language=JavaScript>
-
-        var message="Please do not download the images.";
-        
-        function clickIE6(){
-        
-        if (event.button==2){
-        
-        
-        return false;
-        
-        }
-        
-        }
-        
-        function clickNS4(e){
-        
-        if (document.layers||document.getElementById&&!document.all){
-        
-        if (e.which==2||e.which==3){
-        
-        return false;
-        
-        }
-        
-        }
-        
-        }
-        
-        if (document.layers){
-        
-        document.captureEvents(Event.MOUSEDOWN);
-        
-        document.onmousedown=clickNS4;
-        
-        }
-        
-        else if (document.all&&!document.getElementById){
-        
-        document.onmousedown=clickIE6;
-        
-        }
-        
-        document.oncontextmenu=new Function("return false")
-        
-    </script>
 </head>
 
 <body>
@@ -1420,11 +1374,10 @@
                                 </div>
                             </div>
                         </div>
-                        <audio id="music">
-                        <source src="sonata.mp3" type="audio/mpeg">
 
                         <!-- end music Player -->
                     </div>
+
                     <div class="col d-none d-lg-block text-right header__col-right">
                         <ul class="social">
                             <li class="social__item">
@@ -1442,26 +1395,14 @@
                             <li class="social__item">
                                 <a class="fa fa-whatsapp" href="https://wa.me/966545488488"></a>
                             </li>
+                            <li class="social__item">
+                                <a href="#" id="play-music" style="color: var(
+                                    --color-accent-primary-1);"><i class="fa fa-play-circle"></i></a>
+                                <a href="#" id="pause-music" style="color: var(
+                                    --color-accent-primary-1); display: none;"><i class="fa fa-pause-circle"></i></a>
+                            </li>
                         </ul>
                         
-                        <!-- music Player -->
-                        <div class="player__container">
-                            <div id="app">
-                                <div class="pause">
-                                    <div class="line line_1"></div>
-                                    <div class="line line_2"></div>
-                                </div>
-                                <div class="play active">
-                                    <div class="line line_1"></div>
-                                    <div class="line line_2"></div>
-                                    <div class="line line_3"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <audio id="music">
-                        <source src="sonata.mp3" type="audio/mpeg">
-
-                        <!-- end music Player -->
                     </div>
                 </div>
                 <div class="header__overlay-menu-back material-icons" id="js-submenu-back">arrow_back</div>
@@ -1975,6 +1916,9 @@
 
         <div class="transition-curtain bg-dark"></div>
         <canvas id="js-webgl"></canvas>
+        <audio id="music">
+        <source src="sonata.mp3" type="audio/mpeg">
+        <source src="sonata.ogg" type="audio/mpeg">
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -1982,63 +1926,10 @@
     </script>
     <script src="js/vendor.js"></script>
     <script src="js/components.js"></script>
+    <script src="js/app.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALbWA4xez3CztK8Q-fZkvxAie-rpMm3jY"></script>
-    
-    
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
-        }
-    
-        function triggerHtmlEvent(element, eventName) {
-          var event;
-          if (document.createEvent) {
-            event = document.createEvent('HTMLEvents');
-            event.initEvent(eventName, true, true);
-            element.dispatchEvent(event);
-          } else {
-            event = document.createEventObject();
-            event.eventType = eventName;
-            element.fireEvent('on' + event.eventType, event);
-          }
-        }
-    
-        jQuery('.lang-select').click(function() {
-          var theLang = jQuery(this).attr('data-lang');
-          jQuery('.goog-te-combo').val(theLang);
-    
-          //alert(jQuery(this).attr('href'));
-          window.location = jQuery(this).attr('href');
-          location.reload();
-    
-        });
-
-        
-      </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-    <script>
-        /* music player */
-        var pause = document.querySelector('.pause');
-        var play = document.querySelector('.play');
-        var btn = document.querySelector('#app');
-        var myMusic= document.getElementById("music");
-
-        btn.addEventListener('click', () => {
-            if( play.classList.contains("active") )
-            {
-                play.classList.remove("active");
-                pause.classList.add("active");
-                    myMusic.play();
-            }
-            else
-            {
-                pause.classList.remove("active");
-                play.classList.add("active");
-                myMusic.pause();
-            }
-        })
-    </script>
 </body>
 
 </html>
