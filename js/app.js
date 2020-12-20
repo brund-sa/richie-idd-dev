@@ -48,29 +48,11 @@ function googleTranslateElementInit() {
   var musicPlay = document.getElementById('play-music');
   var musicPause = document.getElementById('pause-music');
 
-  btn.addEventListener('click', () => {
-      if( play.classList.contains("active") )
-      {
-          myMusic.play();
-          play.classList.remove("active");
-          pause.classList.add("active");
-          
-      }
-      else
-      {
-          myMusic.pause();
-          pause.classList.remove("active");
-          play.classList.add("active");
-         
-      }
-  });
 
   musicPlay.addEventListener('click', () => {
         musicPlay.style.display = "none";
         musicPause.style.display = "block"
         music.play();
-        play.classList.remove("active");
-        pause.classList.add("active");
   });
 
   musicPause.addEventListener('click', () => {
@@ -133,3 +115,17 @@ function googleTranslateElementInit() {
   
   document.oncontextmenu=new Function("return false")
 
+/* ===============================================
+
+ ================================================ */
+
+   
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        effect: 'fade',
+        centeredSlides: true,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        },
+    });
