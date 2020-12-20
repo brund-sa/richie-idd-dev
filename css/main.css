@@ -4926,7 +4926,7 @@ div.wpcf7-acceptance-missing {
     word-wrap: normal;
     text-align: right;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 .menu > li {
@@ -8246,7 +8246,7 @@ svg.vector-letters {
 }
 .social__item a {
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     padding: 2px;
 }
 .social__item a:hover {
@@ -9590,6 +9590,44 @@ textarea.form-input {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+}
+#english__ {
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    background: url(https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: -150%;
+    width: 40px;
+    height: 20px;
+}
+#english__:hover {
+    color: transparent;
+    background: url(https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    width: 40px;
+    height: 20px;
+}
+#arabic__ {
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: -200%;
+    width: 40px;
+    height: 20px;
+}
+#arabic__:hover {
+    color: transparent;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    width: 40px;
+    height: 20px;
 }
 
 @media screen and (max-width: 600px) {
