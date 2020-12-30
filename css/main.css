@@ -1,6 +1,6 @@
 @font-face {
     font-family: Avenir;
-    src: url(../fonts/Avenir.ttc) format("truetype");
+    src: url(../fonts/helveticaAR.ttf) format("truetype");
 }
 
 /* additional CSS */
@@ -9597,7 +9597,7 @@ textarea.form-input {
     background: url(https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: -150%;
+    background-position-y: -300%;
     width: 40px;
     height: 20px;
 }
@@ -9616,7 +9616,7 @@ textarea.form-input {
     background: url(https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position-y: -200%;
+    background-position-y: -500%;
     width: 40px;
     height: 20px;
 }
@@ -9628,6 +9628,14 @@ textarea.form-input {
     background-position-y: 50%;
     width: 40px;
     height: 20px;
+}
+
+.ar-text {
+    text-transform: lowercase !important;
+    letter-spacing: 0px !important;
+    text-align: right;
+    direction: rtl;
+    font-family: 'Avenir', sans-serif !important;
 }
 
 @media screen and (max-width: 600px) {

@@ -1674,12 +1674,17 @@
         </section>
         <!-- - section MASTHEAD -->
         <!-- section SLIDER #1 -->
-        <section
-            class="section section-offset bg-accent-primary-3 section_pb-small section-offset_top">
-            <div class="section-offset__content" id="commercial1-bg">
-            </div>
-        </section>
-        <!-- - section SLIDER #1 -->
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background: url(./img/assets/commercial/com1-1.webp); background-size: cover; background-position:center center;"></div>
+                        <div class="swiper-slide" style="background: url(./img/assets/commercial/com1-2.webp); background-size: cover; background-position:center center;"></div>
+                        <div class="swiper-slide" style="background: url(./img/assets/commercial/com1-3.webp); background-size: cover; background-position:center center;"></div>
+                        <div class="swiper-slide" style="background: url(./img/assets/commercial/com1-4.webp); background-size: cover; background-position:center center;"></div>
+                        <div class="swiper-slide" style="background: url(./img/assets/commercial/com1-7.webp); background-size: cover; background-position:center center;"></div>
+                    </div>
+                </div>
+                <!-- - section SLIDER #1 -->
         <!-- section CONTENT #1 -->
         <section class="section section-content section_pt section_pb bg-dark color-white"
           data-os-animation="data-os-animation">
@@ -1763,7 +1768,7 @@
                 </div>
               </div>
             </a><a class="col-md-5 section-nav-projects__inner section-nav-projects__inner_next"
-              href="commercial-2.html" data-pjax-link="flyingHeading">
+              href="commercial-2.html" data-pjax-link="flyingHeading" data-barba-prevent>
               <div class="section-nav-projects__wrapper-heading section-nav-projects__wrapper-heading_next">
                 <div
                   class="section-nav-projects__heading section-nav-projects__heading_next split-text js-text-to-fly js-split-text"
@@ -1778,6 +1783,15 @@
     </div>
     <div class="transition-curtain bg-dark-2"></div>
     <canvas id="js-webgl"></canvas>
+    <div class="player__container__desktop">
+        <a href="#" id="play-music" style="color: var(
+            --color-accent-primary-1);"><i class="fa fa-play-circle"></i></a>
+        <a href="#" id="pause-music" style="color: var(
+            --color-accent-primary-1); display: none;"><i class="fa fa-pause-circle"></i></a>
+    </div>
+    <audio id="music">
+    <source src="../richie-sound.mp3" type="audio/mpeg">
+    <source src="../richie-sound.ogg" type="audio/ogg">
   </div>
 
 

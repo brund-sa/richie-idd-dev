@@ -1626,13 +1626,22 @@
           </div>
         </section>
         <!-- - section MASTHEAD -->
+        
         <!-- section SLIDER #1 -->
         <section
-            class="section section-offset bg-accent-primary-3 section_pb-small section-offset_top">
-            <div class="section-offset__content" id="section2-bg">
+        class="section section-offset bg-accent-primary-3 section_pb-small section-offset_top">
+            <div class="section-offset__content">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background: url(./img/assets/residential/res2-1.webp); background-size: cover; background-position:center center;"></div>
+                        <div class="swiper-slide" style="background: url(./img/assets/residential/res2-8.webp); background-size: cover; background-position:center center;"></div>
+                        <div class="swiper-slide" style="background: url(./img/assets/residential/res2-3.webp); background-size: cover; background-position:center center;"></div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- - section SLIDER #1 -->
+
         <!-- section CONTENT #1 -->
         <section class="section section-content section_pt section_pb bg-dark color-white"
           data-os-animation="data-os-animation">
@@ -1664,7 +1673,7 @@
         <!-- section NAV PROJECTS -->
         <section class="section-nav-projects bg-dark-2 color-white">
           <div class="row no-gutters"><a class="col-md-5 section-nav-projects__inner section-nav-projects__inner_prev"
-              href="residential-1.html" data-pjax-link="flyingHeading">
+              href="residential-1.html" data-pjax-link="flyingHeading" data-barba-prevent>
               <div class="section-nav-projects__wrapper-heading section-nav-projects__wrapper-heading_prev">
                 <div
                   class="section-nav-projects__heading section-nav-projects__heading_prev split-text js-text-to-fly js-split-text"
@@ -1716,7 +1725,7 @@
                 </div>
               </div>
             </a><a class="col-md-5 section-nav-projects__inner section-nav-projects__inner_next"
-              href="residential-3.html" data-pjax-link="flyingHeading">
+              href="residential-3.html" data-pjax-link="flyingHeading" data-barba-prevent>
               <div class="section-nav-projects__wrapper-heading section-nav-projects__wrapper-heading_next">
                 <div
                   class="section-nav-projects__heading section-nav-projects__heading_next split-text js-text-to-fly js-split-text"
@@ -1731,6 +1740,15 @@
     </div>
     <div class="transition-curtain bg-dark-2"></div>
     <canvas id="js-webgl"></canvas>
+    <div class="player__container__desktop">
+        <a href="#" id="play-music" style="color: var(
+            --color-accent-primary-1);"><i class="fa fa-play-circle"></i></a>
+        <a href="#" id="pause-music" style="color: var(
+            --color-accent-primary-1); display: none;"><i class="fa fa-pause-circle"></i></a>
+    </div>
+    <audio id="music">
+    <source src="../richie-sound.mp3" type="audio/mpeg">
+    <source src="../richie-sound.ogg" type="audio/ogg">
   </div>
 
 

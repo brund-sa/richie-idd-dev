@@ -116,7 +116,7 @@ function googleTranslateElementInit() {
   document.oncontextmenu=new Function("return false")
 
 /* ===============================================
-
+=============== SWIPER ==========================
  ================================================ */
 
    
@@ -129,3 +129,20 @@ function googleTranslateElementInit() {
         disableOnInteraction: false,
         },
     });
+
+/* ===============================================
+======== append data-src =======================
+================================================== */
+
+document.body.setAttribute('data-barba-prevent', 'all');
+
+
+
+
+
+
+
+
+
+
+
