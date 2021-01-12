@@ -4,7 +4,9 @@
 }
 
 /* additional CSS */
-
+#arabic__ {
+    display: none;
+}
 img {
     pointer-events: none !important;
     -webkit-user-select:none;
